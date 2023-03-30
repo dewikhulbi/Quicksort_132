@@ -70,6 +70,11 @@ void q_short(int low, int high)
 		while ((arr[j] > pivot) && (j >= low))		//langkah algoritma no 7
 		{
 			j--;			//Langkah algoritma no 8
+			cmp_count++;
 		}
+		cmp_count++;
+
+		//iff the greather element is on the left of the element
+		if (i < j)			//Langkah algoritma no 9
 	}
 }
