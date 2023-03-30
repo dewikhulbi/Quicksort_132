@@ -26,7 +26,7 @@ void input() {
 	for (int i = 0; i < n; i++)
 	{
 		cout << "<" << (i + 1) << ">";
-		cin >> arr[i];
+			cin >> arr[i];
 	}
 }
 
@@ -113,7 +113,7 @@ void display() {
 int main()
 {
 	input();
-	q_short(0, -1);		//sort the array using quick sort
+	q_short(0, n-1);		//sort the array using quick sort
 	display();
 	system("pause");
 
