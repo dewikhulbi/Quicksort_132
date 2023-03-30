@@ -51,5 +51,5 @@ void q_short(int low, int high)
 	//Outher conntaining elements greather than pivot
 
 	pivot = arr[low]		//Langkah algoritma no 2
+	i = low + 1;		//langkah algoritma no 3
 }
-
