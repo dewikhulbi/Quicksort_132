@@ -52,4 +52,5 @@ void q_short(int low, int high)
 
 	pivot = arr[low]		//Langkah algoritma no 2
 	i = low + 1;		//langkah algoritma no 3
+	j = high;				//Langkah algoritma no 4
 }
