@@ -40,3 +40,13 @@ void swap(int x, int y)
 	arr[y] = temp;
 }
 
+void q_short(int low, int high)
+{
+	int pivot, i, j;
+	if (low > high)		//Langkah Algoritma No. 1
+		return;
+
+	//Partition the list into twi parts:
+	//one containing elements less that or equal to pivot
+	//Outher conntaining elements greather than pivot
+}
