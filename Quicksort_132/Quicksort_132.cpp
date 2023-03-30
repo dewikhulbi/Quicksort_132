@@ -76,5 +76,36 @@ void q_short(int low, int high)
 
 		//iff the greather element is on the left of the element
 		if (i < j)			//Langkah algoritma no 9
+		{
+			//swap the element at index 1 with the element at index j
+			swap(i, j);
+			mov_count++;
+		}
 	}
+	//j now containt the index of the last element in the sorted list
+	if (low < j)
+	{
+		//move the pivot to its correct position in the list
+		swap(low, j);
+		mov_count++;
+	}
+	//sort the list on the right of pivot using quick sort
+	q_short(low, j - 1);
+
+	//sort the list on the right of pivot using quick sort
+	q_short(j + 1, high);
+}
+
+void display() {
+	cout << "\n---------------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "-----------------------" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparisions: " << cmp_count << endl;
+	cout << "Number of data movements: " << mov_count << endl;
 }
